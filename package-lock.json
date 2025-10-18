@@ -1,0 +1,12 @@
+{
+  "name": "instagram-clone-server",
+  "version": "1.0.0",
+  "description": "A server for the Instagram clone login page.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
