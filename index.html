@@ -69,7 +69,11 @@
             const password = document.getElementById('password').value;
 
             try {
-                const response = await fetch('http://localhost:3000/login', {
+                // --- CORRECTED CODE ---
+                // We now use a relative path ('/login') instead of an absolute one.
+                // This tells the browser to send the request to the same server
+                // that it got this HTML file from (e.g., your-app.onrender.com).
+                const response = await fetch('/login', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ username, password }),
@@ -92,4 +96,3 @@
     </script>
 </body>
 </html>
-
